@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ONE PRO LEAGUE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            max-height: 850px;
+            background: #000000;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #222;
+        }
+
+        .top-gradient {
+            background-image: url('https://i.pinimg.com/736x/76/30/e8/7630e860090413703b76303ff460d22a.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            padding: 50px 25px 25px 25px;
+        }
+
+        .card-bg-img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        .card-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+
+        .transaction-card {
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 16px;
+            height: 90px;
+            overflow: hidden;
+            display: block;
+            text-decoration: none;
+        }
+
+        .neon-red:hover { box-shadow: 0 0 20px rgba(239, 68, 68, 0.6); transform: translateY(-2px); }
+        .neon-blue:hover { box-shadow: 0 0 20px rgba(59, 130, 246, 0.6); transform: translateY(-2px); }
+        .neon-green:hover { box-shadow: 0 0 20px rgba(14, 115, 237, 0.6); transform: translateY(-2px); }
+        .neon-purple:hover { box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <div class="top-gradient"></div>
+
+    <div class="flex-1 p-6 text-white overflow-y-auto">
+        <h2 class="text-xl font-semibold mb-6">PRO LEAGUE | UCL FORMAT</h2>
+
+        <!-- Player Lists -->
+        <a href="https://shelbyzio.github.io/proleague_players/" target="_blank" class="transaction-card neon-red card-bg-img" style="background-image: url('https://i.pinimg.com/736x/52/04/da/5204da0a2f719f95b7774fbd01eca40b.jpg');">
+            <div class="card-overlay">
+                <div class="flex-1">
+                    <p class="font-bold text-white text-lg">Player Lists</p>
+                    <p class="text-xs text-gray-400">Tap to view details</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Match Fixtures -->
+        <a href="https://shelbyzio.github.io/Pro_League/" target="_blank" class="transaction-card neon-green card-bg-img" style="background-image: url('https://i.pinimg.com/1200x/78/b9/73/78b9730d81317bf85f3d8549531596ae.jpg');">
+            <div class="card-overlay">
+                <div class="flex-1">
+                    <p class="font-bold text-white text-lg">Match Fixtures</p>
+                    <p class="text-xs text-gray-400">Tap to view details</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Send Result -->
+        <a href="https://t.me/agust_nadi" target="_blank" class="transaction-card neon-blue card-bg-img" style="background-image: url('https://i.pinimg.com/736x/c7/f1/a5/c7f1a5d5888c5b4bfcaed71baa713372.jpg');">
+            <div class="card-overlay">
+                <div class="flex-1">
+                    <p class="font-bold text-white text-lg">Send Result Here!</p>
+                    <p class="text-xs text-gray-400">Tap to send result</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Coin Store -->
+        <a href="https://t.me/Profit_Zio" target="_blank" class="transaction-card neon-purple card-bg-img" style="background-image: url('https://pbs.twimg.com/media/F5Zzg2DbAAEALOh.png');">
+            <div class="card-overlay">
+                <div class="flex-1">
+                    <p class="font-bold text-white text-lg">eFootball Coin store</p>
+                    <p class="text-xs text-gray-400">Tap to view details</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
